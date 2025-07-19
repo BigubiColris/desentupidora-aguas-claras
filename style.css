@@ -84,13 +84,18 @@ h2 {
 }
 
 /* Contato */
-.cartao-contato {
-  background: #f1faff;
-  padding: 20px;
-  border-radius: 10px;
-  text-align: center;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+.cartao-contato a[href^="tel:"] {
+  color: #cc0000; /* vermelho harmonioso */
+  font-size: 1.2em;
+  font-weight: bold;
+  text-decoration: none;
 }
+
+.cartao-contato a[href^="tel:"]:hover {
+  color: #e60000;
+  text-decoration: underline;
+}
+
 
 .botao-whatsapp {
   display: inline-block;
