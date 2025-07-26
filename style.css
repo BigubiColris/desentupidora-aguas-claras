@@ -202,7 +202,7 @@ footer {
   }
 
   .logo {
-    width: 110px; /* Aumenta o tamanho da logo */
+    width: 180px; /* Aumenta o tamanho da logo */
   }
 
   .header-texto h1 {
@@ -219,8 +219,8 @@ footer {
   }
 
   .servico-imagem {
-    width: 140px;
-    height: 140px;
+    width: 180px;
+    height: 180px;
     margin-bottom: 10px;
   }
 
