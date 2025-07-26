@@ -202,31 +202,44 @@ footer {
   }
 
   .logo {
-    width: 90px;
+    width: 110px; /* Aumenta o tamanho da logo */
   }
 
   .header-texto h1 {
-    font-size: 2em;
+    font-size: 2.3em; /* Mais destaque no nome da empresa */
   }
 
   .header-texto p {
-    font-size: 1em;
+    font-size: 1.1em;
+  }
+
+  /* Grid de serviços em 1 coluna */
+  .servicos-grid {
+    grid-template-columns: 1fr;
   }
 
   .servico-imagem {
-    width: 100px;
-    height: 100px;
+    width: 140px;
+    height: 140px;
+    margin-bottom: 10px;
+  }
+
+  .servicos-grid li {
+    padding: 25px;
   }
 
   .botao-whatsapp {
     width: 100%;
+    font-size: 1.1em;
   }
 
   section {
     margin: 20px 15px;
     padding: 20px;
   }
-    .porque-escolher .beneficios {
+
+  /* Ajusta os benefícios */
+  .porque-escolher .beneficios {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -235,10 +248,11 @@ footer {
 
   .beneficio {
     width: 90%;
-    padding: 15px;
+    padding: 15px 20px;
     font-size: 1em;
   }
 }
+
 
 /* RESPONSIVO: TABLET */
 @media (min-width: 601px) and (max-width: 1024px) {
