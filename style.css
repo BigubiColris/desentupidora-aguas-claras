@@ -6,8 +6,8 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
-  background: linear-gradient(to right, #f0f8ff, #e6f7ff);
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(to bottom, #f8f8f8, #e0e0e0);
   color: #333;
   line-height: 1.6;
 }
@@ -19,12 +19,11 @@ img {
 
 /* HEADER */
 header {
-  background: #004080; /* mantém o azul escuro */
+  background: #59a1ba; /* mantém o azul escuro */
   color: white;
   text-align: center;
   padding: 60px 20px;
 }
-
 
 header h1 {
   font-size: 3em;
@@ -47,7 +46,7 @@ section {
 }
 
 h2 {
-  color: #004080;
+  color: #59a1ba;
   font-size: 2em;
   margin-bottom: 20px;
   text-align: center;
@@ -55,14 +54,14 @@ h2 {
 }
 
 h2::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -10px;
   left: 50%;
   transform: translateX(-50%);
   width: 60px;
   height: 4px;
-  background: #25D366;
+  background: #6fbb58;
   border-radius: 2px;
 }
 
@@ -76,7 +75,7 @@ h2::after {
 /* SERVIÇOS */
 .servicos-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(3, 1fr); /* 3 fixas */
   gap: 25px;
   list-style: none;
   padding: 0;
@@ -87,13 +86,13 @@ h2::after {
   background: #f9fbff;
   border-radius: 12px;
   padding: 20px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.07);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.07);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .servicos-grid li:hover {
   transform: translateY(-8px);
-  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
 
 .servico-imagem {
@@ -120,7 +119,7 @@ h2::after {
   text-align: center;
   flex: 1 1 200px;
   max-width: 300px;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
   transition: transform 0.2s;
 }
 
@@ -139,7 +138,7 @@ h2::after {
 
 .botao-whatsapp {
   display: inline-block;
-  background-color: #25D366;
+  background-color: #70ba59;
   color: white;
   padding: 14px 25px;
   border-radius: 8px;
@@ -150,13 +149,13 @@ h2::after {
 }
 
 .botao-whatsapp:hover {
-  background-color: #1ebe5d;
+  background-color: #70ba59;
   transform: scale(1.03);
 }
 
 /* FOOTER */
 footer {
-  background: #002b5c;
+  background: #59a1ba;
   color: white;
   text-align: center;
   padding: 20px;
@@ -207,4 +206,69 @@ footer {
   .botao-whatsapp {
     width: 80%;
   }
+}
+
+/* HEADER COM LOGO */
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.logo {
+  width: 130px;
+  height: auto;
+}
+
+.header-texto h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+.header-texto p {
+  font-size: 1.1em;
+  margin-top: 5px;
+}
+
+/* RESPONSIVO: LOGO CENTRALIZADO NO MOBILE */
+@media (max-width: 600px) {
+  .header-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .logo {
+    width: 70px;
+  }
+
+  .header-texto h1 {
+    font-size: 1.8em;
+  }
+
+  .header-texto p {
+    font-size: 1em;
+  }
+}
+
+.botao-flutuante {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #70ba59;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 1em;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  z-index: 999;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.botao-flutuante:hover {
+  background-color: #5ca94a;
+  transform: scale(1.05);
 }
